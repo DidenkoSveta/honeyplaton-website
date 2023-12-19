@@ -1,0 +1,13 @@
+
+> cheelee-platform@1.0.0 build
+> webpack --mode production
+
+asset [1m[32mmain.css[39m[22m 1.02 KiB [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
+asset [1m[32mindex.html[39m[22m 332 bytes [1m[33m[compared for emit][39m[22m
+asset [1m[32mbundle.js[39m[22m 0 bytes [1m[33m[compared for emit][39m[22m [1m[32m[minimized][39m[22m (name: main)
+Entrypoint [1mmain[39m[22m 1.02 KiB = [1m[32mmain.css[39m[22m 1.02 KiB [1m[32mbundle.js[39m[22m 0 bytes
+orphan modules 3.81 KiB (javascript) 937 bytes (runtime) [1m[33m[orphan][39m[22m 8 modules
+cacheable modules 201 bytes (javascript) 1.03 KiB (css/mini-extract)
+  [1m./src/index.js[39m[22m 201 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+  css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js![1m./src/scss/style.scss[39m[22m 1.03 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.89.0 compiled [1m[32msuccessfully[39m[22m in 2204 ms
