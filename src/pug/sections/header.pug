@@ -1,13 +1,17 @@
-header
-  .container
-    // Логотип
-    a.logo(href='/')
-      img(src='path/to/logo.png', alt='Мед Платона')
-
-    // Навигация
-    nav
-      ul.navigation
-        li: a(href='#about') О нас
-        li: a(href='#products') Продукция
-        li: a(href='#contact') Контакты
-        // Добавьте дополнительные пункты навигации по мере необходимости
+header.header
+   .header__container.container
+      a.header__logo.logo(href='index.html') Мёд <br>Платона
+         img.logo__image(src=require("../../images/icons/logo-platon.svg"), alt='Логотип Мед Платона')
+      nav.header__nav
+         ul.header__nav-list
+            li.header__nav-item
+               a.header__nav-link(href="#") Преимущества
+            li.header__nav-item
+               a.header__nav-link(href="#") Продукция
+            li.header__nav-item
+               a.header__nav-link(href="#") О нас
+            li.header__nav-item
+               a.header__nav-link(href="#") Доставка
+            li.header__nav-item
+               a.header__nav-link(href="#") Контакты
+         a.header__nav-link.header__nav-link-tel(href="#") +7 (917) 167 33 62

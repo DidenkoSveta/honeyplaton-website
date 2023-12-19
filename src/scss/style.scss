@@ -2,4 +2,65 @@
 @import "reset";
 @import "fonts";
 @import "global";
+
+.header{
+   &__container{
+      justify-content: space-between;
+   }
+   &__logo{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      color: $brown;
+      font-family: "Appetite";
+      font-size: 26px;
+   }
+   &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      &-list{
+         display: flex;
+         width: 70%;
+         justify-content: space-between;
+      }
+      &-link{
+         color: $brown;
+         font-weight: 500;
+         transition: color 0.3s ease-in-out;
+      }
+      &-item:hover{
+         transition: transform 0.15s linear;
+         transform: perspective(1000px) scale(1.02);
+      }
+      &-link:hover{
+         color: $light-brown;
+         font-weight: 500;
+         cursor: pointer;
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "mobile";

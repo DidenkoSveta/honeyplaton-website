@@ -1,27 +1,16 @@
-// Responsive design for header at 1040px screen width
+@media (max-width: 1640px) {
+   .header__container{
+      padding: 26px 60px;
+   }
+}
+@media (max-width: 1440px) {
+   .header__container{
+      padding: 26px 60px;
+   }
+}
+
 @media (max-width: 1040px) {
-   .header {
-      padding: 0 15px;
-
-      &__container {
-         flex-wrap: wrap;
-      }
-
-      &__navigation {
-         display: none; // Hide for mobile menu implementation
-      }
-
-      &__cta {
-         margin-top: 10px;
-      }
-
-      &__prices {
-         flex-direction: column;
-         align-items: flex-start;
-      }
-
-      &__locale {
-         margin-top: 10px;
-      }
+   .header__container{
+      padding: 26px 40px;
    }
 }
