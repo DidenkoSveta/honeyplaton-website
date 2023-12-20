@@ -3,11 +3,20 @@
 @import "fonts";
 @import "global";
 
-.header{
-   &__container{
+.wrapper__promo {
+   position: relative;
+   background-image: url("../images/bg/promo-bg.svg");
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   height: 96vh;
+}
+
+.header {
+   &__container {
       justify-content: space-between;
    }
-   &__logo{
+   &__logo {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -15,28 +24,28 @@
       width: 200px;
       color: $brown;
       font-family: "Appetite";
-      font-size: 26px;
+      font-size: 24px;
    }
-   &__nav{
+   &__nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 70%;
-      &-list{
+      &-list {
          display: flex;
          width: 70%;
          justify-content: space-between;
       }
-      &-link{
+      &-link {
          color: $brown;
          font-weight: 500;
          transition: color 0.3s ease-in-out;
       }
-      &-item:hover{
+      &-item:hover {
          transition: transform 0.15s linear;
          transform: perspective(1000px) scale(1.02);
       }
-      &-link:hover{
+      &-link:hover {
          color: $light-brown;
          font-weight: 500;
          cursor: pointer;
@@ -44,23 +53,57 @@
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.promo {
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+   }
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 66px;
+      align-items: start;
+   }
+   &__title {
+      font-family: "Appetite";
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 120%;
+   }
+   &__subtitle {
+      width: 566px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0.26px;
+   }
+   &__button {
+      color: $brown;
+      font-weight: 600;
+      padding: 23px 63px;
+      background-color: $yellow;
+      border: none;
+      position: relative;
+      border-radius: 50px;
+      cursor: pointer;
+      outline: none;
+      box-shadow: 2px 2px 4px 0px rgba(89, 43, 2, 0.2);
+      transition: background-color 0.3s;
+      z-index: 2;
+   }
+   &__drip {
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+   }
+   &__button:hover{
+      transition: transform 0.15s linear;
+      transform: perspective(1000px) scale(1.05);      
+   }
+}
 
 @import "mobile";
