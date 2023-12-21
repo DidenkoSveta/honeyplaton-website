@@ -3,7 +3,7 @@ body{
    color: $brown;
    font-size: 20px;
    font-family: 'Montserrat', sans-serif;
-   font-weight: 500;
+   font-weight: 400;
    line-height: 126%;
 }
 
@@ -13,10 +13,16 @@ body{
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1040px){
    body{
       font-size: 16px;
    }
+}
+
+h2{
+   font-family: "Appetite";
+   font-size: 40px;
+   font-weight: 400;
 }
 
 .header{
@@ -26,7 +32,8 @@ body{
 }
 
 .header__container,
-.promo__container{
+.promo__container,
+.advantages__container{
    display: flex;
    width: 100vw;
    padding: 26px 200px;
