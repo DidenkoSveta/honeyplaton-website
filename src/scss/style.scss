@@ -6,15 +6,19 @@
 .wrapper__promo {
    position: relative;
    background-image: url("../images/bg/promo-bg.svg");
-   background-size: 100% auto;
+   background-size: cover;
    background-repeat: no-repeat;
-   background-position: bottom center;
-   height: 96vh;
+   background-position: center bottom;
+   height: 94vh;
+   display: flex;
+   flex-direction: column;
 }
 
 .header {
    &__container {
       justify-content: space-between;
+      position: relative;
+      z-index: 2001;
    }
    &__logo {
       display: flex;
@@ -51,10 +55,45 @@
          cursor: pointer;
       }
    }
+   &__burger {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      z-index: 2000;
+      cursor: pointer;
+      background-image: url("../images/icons/burger-menu.svg");
+      height: 23px;
+      width: 30px;
+      display: none;
+   }
+
+   &__close {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      z-index: 2000;
+      cursor: pointer;
+      background-image: url("../images/icons/burger-close.svg");
+      height: 24px;
+      width: 24px;
+      display: none;
+   }
+}
+
+.dim-background {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1999;
 }
 
 .promo {
    &__container {
+      margin-top: 4vh;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -100,9 +139,9 @@
       transform: translateX(-50%);
       z-index: -1;
    }
-   &__button:hover{
+   &__button:hover {
       transition: transform 0.15s linear;
-      transform: perspective(1000px) scale(1.05);      
+      transform: perspective(1000px) scale(1.05);
    }
 }
 
