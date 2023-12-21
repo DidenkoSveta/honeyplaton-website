@@ -278,3 +278,29 @@
       height: 88px;
    }
 }
+
+@media (max-width: 1040px){
+   .promo__image-bee001{
+      top: -10px;
+   }
+}
+
+@media (max-width: 768px){
+   .promo__image-bee001{
+      top: -50px;
+   }
+}
+
+@media (max-width: 640px){
+   .promo__image-bee001{
+      top: 20px;
+      width: 120px;
+   }
+}
+
+@media (max-width: 490px){
+   .promo__image-bee001{
+      top: 72vw;
+      width: 120px;
+   }
+}
