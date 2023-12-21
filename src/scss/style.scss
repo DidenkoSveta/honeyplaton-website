@@ -12,6 +12,7 @@
    height: 94vh;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
 }
 
 .header {
@@ -93,7 +94,8 @@
 
 .promo {
    &__container {
-      margin-top: 4vh;
+      position: relative;
+      top: -8vh;
       display: flex;
       justify-content: space-between;
       align-items: center;
