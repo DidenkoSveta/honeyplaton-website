@@ -1,7 +1,8 @@
 @media (max-width: 1690px) {
    .header__container,
    .promo__container,
-   .advantages__container {
+   .advantages__container,
+   .products__container {
       padding: 26px 60px;
       overflow-x: hidden;
    }
@@ -9,7 +10,8 @@
 @media (max-width: 1440px) {
    .header__container,
    .promo__container,
-   .advantages__container {
+   .advantages__container,
+   .products__container {
       padding: 26px 60px;
    }
 }
@@ -17,7 +19,8 @@
 @media (max-width: 1040px) {
    .header__container,
    .promo__container,
-   .advantages__container {
+   .advantages__container,
+   .products__container {
       padding: 26px 40px;
    }
 }
@@ -25,7 +28,8 @@
 @media (max-width: 490px) {
    .header__container,
    .promo__container,
-   .advantages__container {
+   .advantages__container,
+   .products__container {
       padding: 26px 20px;
    }
 }
