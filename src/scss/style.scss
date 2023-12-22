@@ -99,7 +99,7 @@
       justify-content: space-between;
       align-items: center;
       font-weight: 400;
-      padding-bottom: 100px!important;
+      padding-bottom: 100px !important;
    }
    &__inner {
       display: flex;
@@ -153,48 +153,49 @@
 }
 
 .advantages {
-   margin-top: 200px;
+   position: relative;
+   margin-top: 160px;
    display: flex;
    justify-content: center;
-   &__container{
+   &__container {
       flex-direction: column;
       justify-content: center;
       gap: 100px;
    }
-   &__title{
+   &__title {
       text-align: center;
    }
-   &__inner{
+   &__inner {
       display: flex;
       justify-content: center;
       align-items: center;
    }
-   &__list{
+   &__list {
       display: flex;
       flex-direction: column;
       gap: 30px;
       position: relative;
       left: -10px;
    }
-   &__item{
+   &__item {
       display: flex;
       justify-content: space-between;
       gap: 20px;
       align-items: center;
       position: relative;
    }
-   &__description{
+   &__description {
       width: 380px;
       display: flex;
       flex-direction: column;
       gap: 8px;
       font-weight: 800;
    }
-   &__icon-wrapper{
+   &__icon-wrapper {
       width: 120px;
       height: 102px;
       position: relative;
-      background-image: url('../images/icons/advantages/hexagon.svg');
+      background-image: url("../images/icons/advantages/hexagon.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -202,24 +203,30 @@
       justify-content: center;
       align-items: center;
    }
-   &__text{
-      font-family: 'Montserrat', sans-serif;
+   &__text {
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
+   }
+   &__bg {
+      position: absolute;
+      &-bee {
+         top: 0;
+         right: -20px;
+         transform: rotate(24deg);
+      }
+      &-honey {
+         bottom: 20px;
+         right: -20px;
+      }
    }
 }
 
-.advantages__item:nth-child(3){
+.advantages__item:nth-child(3) {
    left: 180px;
 }
 
-.advantages__item:nth-child(even){
+.advantages__item:nth-child(even) {
    left: 90px;
 }
-
-
-
-
-
-
 
 @import "mobile";
