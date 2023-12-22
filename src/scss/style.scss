@@ -9,7 +9,6 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center bottom;
-   // height: 94vh;
    display: flex;
    flex-direction: column;
 }
@@ -317,6 +316,54 @@
       filter: drop-shadow(0px 2px 6px rgba(110, 140, 3, 0.2));
    }
 }
+
+
+.about{
+   margin-top: 80px;
+   position: relative;
+   background-image: url("../images/bg/about-bg.svg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   &__container{
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      padding-bottom: 80px;
+   }
+   &__title{
+      padding-top: 40px;
+   }
+   &__content{
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+   }
+   &__description {
+      width: 540px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-weight: 500;
+      line-height: 130%;
+   }
+   &__image-wrapper {
+   }
+   &__svg-top{
+      display: block;
+      width: 100%;
+   }
+   &__svg-bottom{
+      position: relative;
+      bottom: 0;
+   }
+}
+
+
+
 
 
 @import "mobile";
