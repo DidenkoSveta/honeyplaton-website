@@ -155,8 +155,6 @@
 .advantages {
    position: relative;
    margin-top: 160px;
-   display: flex;
-   justify-content: center;
    &__container {
       flex-direction: column;
       justify-content: center;
@@ -210,13 +208,13 @@
    &__bg {
       position: absolute;
       &-bee {
-         top: 0;
-         right: -20px;
-         transform: rotate(24deg);
+         top: 20px;
+         right: 0px;
+         transform: rotate(20deg);
       }
       &-honey {
          bottom: 20px;
-         right: -20px;
+         right: 0px;
       }
    }
 }
@@ -280,27 +278,27 @@
       z-index: 0;
       bottom: 110px;
    }
-   &__weight{
+   &__weight {
       font-size: 0.9em;
    }
-   &__price{
+   &__price {
       font-weight: 600;
    }
    &__bg {
       position: absolute;
       &-bee1 {
-         top: 0;
-         left: -20px;
-         transform: rotate(-20deg);
+         top: 20px;
+         left: 0px;
+         transform: rotate(-10deg);
       }
       &-bee2 {
-         bottom: 0;
-         right: -30px;
+         bottom: 50px;
+         right: 0px;
          transform: rotate(14deg);
       }
       &-honey {
          bottom: 20px;
-         left: -25px;
+         left: 0;
          transform: rotate(-24deg);
       }
    }
@@ -319,5 +317,6 @@
       filter: drop-shadow(0px 2px 6px rgba(110, 140, 3, 0.2));
    }
 }
+
 
 @import "mobile";

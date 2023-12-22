@@ -1,32 +1,36 @@
-body{
+body {
    background-color: $bg-bege;
    color: $brown;
    font-size: 20px;
-   font-family: 'Montserrat', sans-serif;
+   font-family: "Montserrat", sans-serif;
    font-weight: 400;
    line-height: 126%;
    overflow-x: hidden;
 }
 
-@media (max-width: 1440px){
-   body{
+section {
+   width: 100vw;
+}
+
+@media (max-width: 1440px) {
+   body {
       font-size: 18px;
    }
 }
 
-@media (max-width: 1040px){
-   body{
+@media (max-width: 1040px) {
+   body {
       font-size: 16px;
    }
 }
 
-h2{
+h2 {
    font-family: "Appetite";
    font-size: 40px;
    font-weight: 400;
 }
 
-.header{
+.header {
    display: flex;
    justify-content: center;
    width: 100vw;
@@ -35,7 +39,7 @@ h2{
 .header__container,
 .promo__container,
 .advantages__container,
-.products__container{
+.products__container {
    display: flex;
    width: 100vw;
    padding: 26px 200px;
