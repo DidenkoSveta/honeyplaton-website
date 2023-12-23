@@ -1,0 +1,33 @@
+section.contacts
+   .contacts__container
+      .contacts__content
+         h2.contacts__title Контакты
+         .contacts__info
+            address.contacts__address
+               p Самарская обл., ул. Мира, 24, <br> Верхние Белозерки
+               p Часы работы: с 9:00 до 21:00
+               p.contacts__email pnikonoff@gmail.com
+               p.contacts__phone +7 (917) 167 33 62
+            .contacts__messengers 
+               ul.contacts__list 
+                  li.contacts__item
+                     a.contacts__link(href="#") 
+                        img.contacts__icon(src=require("../../images/icons/contacts/contacts-vk.svg"), alt='vkontakte')
+                  li.contacts__item
+                     a.contacts__link(href="#") 
+                        img.contacts__icon(src=require("../../images/icons/contacts/contacts-telegram.svg"), alt='telegram')
+                  li.contacts__item
+                     a.contacts__link(href="#") 
+                        img.contacts__icon(src=require("../../images/icons/contacts/contacts-whatsap.svg"), alt='whatsap')
+      .contacts__map
+         iframe(
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301855.15111923707!2d48.930369594254266!3d53.76734258087077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4167e07a729d87f3%3A0xfbbf12074781e44a!2z0YPQuy4g0JzQuNGA0LAsIDI0LCDQktC10YDRhdC90LjQtSDQkdC10LvQvtC30LXRgNC60LgsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDQ0NTE0Nw!5e0!3m2!1sru!2sam!4v1703323244766!5m2!1sru!2sam",
+            width="50%",
+            height="400",
+            style="border:0;",
+            allowfullscreen="",
+            loading="lazy",
+            referrerpolicy="no-referrer-when-downgrade"
+         )
+      
+

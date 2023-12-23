@@ -335,8 +335,8 @@
       position: relative;
       padding-top: 40px;
    }
-   &__title::after{
-      content: '';
+   &__title::after {
+      content: "";
       background-image: url("../images/icons/bees/about-bee-bg.svg");
       height: 48px;
       width: 48px;
@@ -394,11 +394,11 @@
       justify-content: space-between;
       padding-bottom: 100px !important;
    }
-   &__title{
+   &__title {
       position: relative;
    }
-   &__title::before{
-      content: '';
+   &__title::before {
+      content: "";
       background-image: url("../images/icons/bees/delivery-bee-bg.svg");
       height: 51px;
       width: 124px;
@@ -449,5 +449,55 @@
 .delivery__item:nth-child(3) {
    top: 80px;
 }
+
+.contacts{
+   margin-top: 200px;
+   &__container{
+      justify-content: space-between;
+   }
+   &__content{
+      display: flex;
+      width: 30%;
+      align-items: flex-start;
+      flex-direction: column;
+   }
+   &__info{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+   &__address{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+   }
+   &__map{
+      width: 70%;
+   }
+   &__map iframe{
+      border-radius: 18px;
+      width: 100%;
+   }
+   &__title{
+      text-align: left;
+      margin-bottom: 50px;
+   }
+   &__phone,
+   &__email {
+      font-weight: 500;
+   }
+   &__list{
+      display: flex;
+      align-items: center;
+      width: 190px;
+      justify-content: space-between;
+   }
+   &__icon{
+      width: 40px;
+   }
+}
+
+
+
 
 @import "mobile";

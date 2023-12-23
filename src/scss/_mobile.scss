@@ -4,7 +4,8 @@
    .advantages__container,
    .products__container,
    .about__container,
-   .delivery__container {
+   .delivery__container,
+   .contacts__container {
       padding: 26px 60px;
       // overflow-x: hidden;
    }
@@ -15,7 +16,8 @@
    .advantages__container,
    .products__container,
    .about__container,
-   .delivery__container {
+   .delivery__container,
+   .contacts__container {
       padding: 26px 60px;
    }
 }
@@ -26,7 +28,8 @@
    .advantages__container,
    .products__container,
    .about__container,
-   .delivery__container {
+   .delivery__container,
+   .contacts__container {
       padding: 26px 40px;
    }
 }
@@ -37,21 +40,24 @@
    .advantages__container,
    .products__container,
    .about__container,
-   .delivery__container {
+   .delivery__container,
+   .contacts__container {
       padding: 26px 20px;
    }
 }
 
 @media (max-width: 1040px) {
    .advantages__container,
-   .about__container{
+   .about__container,
+   .contacts__container{
       gap: 70px;
    }
 }
 
 @media (max-width: 780px) {
    .advantages__container,
-   .about__container{
+   .about__container,
+   .contacts__container{
       gap: 60px;
    }
 }
@@ -79,7 +85,8 @@
    .advantages__title,
    .products__title,
    .about__title,
-   .delivery__title {
+   .delivery__title,
+   .contacts__title {
       font-size: 36px;
    }
 }
@@ -88,7 +95,8 @@
    .advantages__title,
    .products__title,
    .about__title,
-   .delivery__title {
+   .delivery__title,
+   .contacts__title {
       font-size: 32px;
    }
 }
@@ -97,7 +105,8 @@
    .advantages__title,
    .products__title,
    .about__title,
-   .delivery__title {
+   .delivery__title,
+   .contacts__title {
       font-size: 26px;
    }
 }
@@ -106,8 +115,15 @@
    .advantages__title,
    .products__title,
    .about__title,
-   .delivery__title {
+   .delivery__title,
+   .contacts__title {
       font-size: 24px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .contacts__title {
+      margin-bottom: 30px;
    }
 }
 
@@ -479,14 +495,16 @@
 @media (max-width: 1240px) {
    .advantages,
    .products,
-   .delivery{
+   .delivery,
+   .contacts{
       margin-top: 100px;
    }
 }
 
 @media (max-width: 1040px) {
    .advantages,
-   .delivery  {
+   .delivery,
+   .contacts  {
       margin-top: 60px;
    }
 }
@@ -931,3 +949,81 @@
       top: -35px;
    }
 }
+
+
+@media (max-width: 1040px){
+   .contacts__address br{
+      display: none;
+   }
+}
+
+@media (max-width: 1040px){
+   .contacts__map iframe{
+      height: 300px!important;
+   }
+}
+
+@media (max-width: 1040px){
+   .contacts__list{
+      width: 160px;
+   }
+}
+
+@media (max-width: 1040px){
+   .contacts__icon{
+      width: 34px;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__container{
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__map{
+      width: 100vw;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__map iframe{
+      border-radius: 0;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__content{
+      width: 100%;
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__address br{
+      display: inline;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__address{
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__info{
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .contacts__address p{
+      text-align: center;
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 768px){}
