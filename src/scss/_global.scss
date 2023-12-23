@@ -28,6 +28,8 @@ h2 {
    font-family: "Appetite";
    font-size: 40px;
    font-weight: 400;
+   text-align: center;
+   line-height: 130%;
 }
 
 .header {
@@ -40,9 +42,13 @@ h2 {
 .promo__container,
 .advantages__container,
 .products__container,
-.about__container {
+.about__container,
+.delivery__container {
    display: flex;
    width: 100vw;
    padding: 26px 200px;
+}
+
+.promo__container{
    overflow-x: hidden;
 }

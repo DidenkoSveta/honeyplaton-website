@@ -3,7 +3,8 @@
    .promo__container,
    .advantages__container,
    .products__container,
-   .about__container {
+   .about__container,
+   .delivery__container {
       padding: 26px 60px;
       // overflow-x: hidden;
    }
@@ -13,7 +14,8 @@
    .promo__container,
    .advantages__container,
    .products__container,
-   .about__container {
+   .about__container,
+   .delivery__container {
       padding: 26px 60px;
    }
 }
@@ -23,7 +25,8 @@
    .promo__container,
    .advantages__container,
    .products__container,
-   .about__container {
+   .about__container,
+   .delivery__container {
       padding: 26px 40px;
    }
 }
@@ -33,14 +36,16 @@
    .promo__container,
    .advantages__container,
    .products__container,
-   .about__container {
+   .about__container,
+   .delivery__container {
       padding: 26px 20px;
    }
 }
 
 @media (max-width: 780px) {
    .advantages__container,
-   .about__container {
+   .about__container,
+   .delivery__container {
       gap: 60px;
    }
 }
@@ -54,7 +59,8 @@
 @media (max-width: 1440px) {
    .advantages__title,
    .products__title,
-   .about__title {
+   .about__title,
+   .delivery__title {
       font-size: 36px;
    }
 }
@@ -62,7 +68,8 @@
 @media (max-width: 1240px) {
    .advantages__title,
    .products__title,
-   .about__title {
+   .about__title,
+   .delivery__title {
       font-size: 32px;
    }
 }
@@ -70,7 +77,8 @@
 @media (max-width: 1040px) {
    .advantages__title,
    .products__title,
-   .about__title {
+   .about__title,
+   .delivery__title {
       font-size: 26px;
    }
 }
@@ -78,7 +86,8 @@
 @media (max-width: 768px) {
    .advantages__title,
    .products__title,
-   .about__title {
+   .about__title,
+   .delivery__title {
       font-size: 22px;
    }
 }
@@ -671,6 +680,7 @@
    }
 }
 
+
 @media (max-width: 1040px) {
    .about__content {
       gap: 5%;
@@ -710,8 +720,21 @@
    }
 }
 
+@media (max-width: 490px) {
+   .about__image-wrapper {
+      width: 80%;
+   }
+}
+
 @media (max-width: 768px) {
    .about__title {
       padding-top: 20px;
+   }
+}
+
+
+@media (max-width: 1240px) {
+   .delivery__list{
+      justify-content: center;
    }
 }
