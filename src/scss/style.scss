@@ -332,7 +332,17 @@
       padding-bottom: 100px;
    }
    &__title {
+      position: relative;
       padding-top: 40px;
+   }
+   &__title::after{
+      content: '';
+      background-image: url("../images/icons/bees/about-bee-bg.svg");
+      height: 48px;
+      width: 48px;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
    }
    &__content {
       width: 100%;
@@ -361,10 +371,18 @@
       display: block;
       bottom: 0;
    }
+   &__bg {
+      position: absolute;
+      &-blum {
+         bottom: 0;
+         left: 0;
+      }
+   }
 }
 
 .delivery {
    margin-top: 160px;
+   position: relative;
    &__container {
       flex-direction: column;
       align-items: center;
@@ -374,7 +392,20 @@
       width: 78%;
       display: flex;
       justify-content: space-between;
-      padding-bottom: 100px!important;
+      padding-bottom: 100px !important;
+   }
+   &__title{
+      position: relative;
+   }
+   &__title::before{
+      content: '';
+      background-image: url("../images/icons/bees/delivery-bee-bg.svg");
+      height: 51px;
+      width: 124px;
+      display: inline-block;
+      position: absolute;
+      left: -10%;
+      top: -35px;
    }
    &__item {
       position: relative;
@@ -401,6 +432,13 @@
       font-size: 22px;
       font-weight: 600;
       line-height: 130%;
+   }
+   &__bg {
+      position: absolute;
+      &-blum {
+         bottom: 0;
+         right: 0;
+      }
    }
 }
 

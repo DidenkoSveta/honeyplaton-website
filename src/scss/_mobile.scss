@@ -391,8 +391,7 @@
 
 @media (max-width: 490px) {
    .promo__image-bee001 {
-      top: 72vw;
-      width: 120px;
+      display: none;
    }
 }
 
@@ -845,6 +844,12 @@
    }
 }
 
+@media (max-width: 490px) {
+   .delivery__list{
+      padding-bottom: 70px !important;
+   }
+}
+
 @media (max-width: 1040px) {
    .delivery__text{
       width: 150px;
@@ -861,5 +866,68 @@
 @media (max-width: 768px) {
    .delivery__item:nth-child(3) {
       top: 0;
+   }
+}
+
+@media (max-width: 1240px) {
+   .delivery__bg-blum{
+      width: 150px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .about__bg-blum{
+      width: 110px;
+   }
+}
+
+@media (max-width: 768px) {
+   .delivery__bg-blum{
+      width: 110px;
+   }
+}
+
+@media (max-width: 490px) {
+   .delivery__bg-blum{
+      width: 90px;
+   }
+}
+
+@media (max-width: 768px) {
+   .about__bg-blum{
+      width: 90px;
+   }
+}
+
+@media (max-width: 490px) {
+   .about__bg-blum{
+      display: none;
+   }
+}
+
+@media (max-width: 768px) {
+   .about__title::after{
+      content: '';
+      background-image: url("../images/icons/bees/about-bee-bg.svg");
+      height: 36px;
+      width: 36px;
+      background-size: contain;
+      display: inline-block;
+      position: absolute;
+      margin-left: 10px;
+   }
+}
+
+@media (max-width: 768px) {
+   .delivery__title::before{
+      content: '';
+      background-image: url("../images/icons/bees/delivery-bee-bg.svg");
+      height: 43px;
+      width: 102px;
+      background-size: contain;
+      display: inline-block;
+      position: absolute;
+      left: -10%;
+      top: -35px;
    }
 }
