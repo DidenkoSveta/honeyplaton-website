@@ -1,0 +1,17 @@
+.modal-overlay(id="modal")
+   .modal-container
+      img.modal__image-bee001(src=require("../../images/icons/bees/promo-bee-bg001.svg"), alt="Пчелы платона")
+      img.advantages__bg.advantages__bg-honey(src=require("../../images/bg/advantages-honey-bg.png"), alt='Капли мёда') 
+      .modal-close(data-close-button) 
+      h2.modal-title Оформление заказа
+      form.modal-form
+         .form-group
+            label(for="name")
+            input(type="text" id="name" placeholder="Ваше имя" required)
+         .form-group
+            label(for="phone")
+            input(type="tel" id="phone" placeholder="Номер телефона" required pattern="\\d*")
+         .form-checkbox
+            input(type="checkbox" id="agreement" required)
+            label(for="agreement") Согласие на обработку персональных данных
+         button.modal-submit(type="submit") Отправить

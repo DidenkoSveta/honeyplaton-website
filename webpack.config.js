@@ -5,13 +5,15 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    // Если нужен корневой публичный путь, раскомментируйте следующую строку
     // publicPath: '/',
+  },
+  resolve: {
+    extensions: ['.js'], // Указывает webpack расширения файлов для обработки
   },
   module: {
     rules: [
@@ -21,8 +23,7 @@ module.exports = {
           {
             loader: 'pug-loader',
             options: {
-              pretty: true, // Для красивой печати HTML, но в продакшене лучше без этого
-              // В Webpack 5 root опция была убрана, используйте alias или require
+              pretty: true, 
             }
           }
         ],
@@ -37,14 +38,11 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: (pathData) => {
-            // Получаем путь к файлу относительно исходной папки 'src'
             const relativePath = path.relative(path.resolve(__dirname, 'src'), pathData.filename);
-            // Заменяем обратные слэши на прямые и удаляем начальный 'images/' если он есть
             return `images/${relativePath.replace(/\\+/g, '/')}`.replace('images/images/', 'images/');
           },
         },
       },
-      // Другие правила при необходимости
     ],
   },
   plugins: [

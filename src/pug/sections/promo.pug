@@ -1,9 +1,14 @@
 section.promo
    .promo__container.container
       .promo__inner
-         h1.promo__title Натуральный мёд
+         h1.promo__title 
+            each char in "Натуральный мёд".split('')
+               if char === ' '
+                  span.space= char
+               else
+                  span.letter= char
          h3.promo__subtitle Из самого сердца Самарской области — собственное производство и особая забота о каждой банке нашего меда.
-         a.promo__button.honey-button(href='index.html') Заказать
+         a.promo__button.honey-button(data-modal-target="#modal") Заказать
             .promo__drip.honey-drip 
                <svg width="156" height="100" viewBox="0 0 156 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_61_26804)">
