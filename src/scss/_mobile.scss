@@ -272,31 +272,37 @@
 
 @media (max-width: 1440px) {
    .promo__title {
-      font-size: 50px;
+      font-size: 56px;
    }
 }
 
 @media (max-width: 1240px) {
    .promo__title {
-      font-size: 46px;
+      font-size: 48px;
    }
 }
 
 @media (max-width: 1040px) {
    .promo__title {
-      font-size: 36px;
+      font-size: 42px;
    }
 }
 
 @media (max-width: 768px) {
    .promo__title {
-      font-size: 30px;
+      font-size: 40px;
    }
 }
 
 @media (max-width: 490px) {
    .promo__title {
-      font-size: 26px;
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 390px) {
+   .promo__title {
+      font-size: 30px;
    }
 }
 
@@ -680,7 +686,9 @@
 
 @media (max-width: 640px) {
    .products__bg-bee2,
-   .products__bg-bee1 {
+   .products__bg-bee1,
+   .contacts__bg-bee2,
+   .contacts__bg-bee1 {
       width: 100px;
    }
 }
@@ -692,7 +700,8 @@
 }
 
 @media (max-width: 1040px) {
-   .products__bg-bee1 {
+   .products__bg-bee1,
+   .contacts__bg-bee1 {
       width: 140px;
    }
 }
@@ -700,6 +709,11 @@
 @media (max-width: 768px) {
    .products__bg-bee1 {
       width: 120px;
+   }
+}
+@media (max-width: 768px){
+   .contacts__bg-bee2{
+      display: none;
    }
 }
 
@@ -710,7 +724,8 @@
 }
 
 @media (max-width: 640px) {
-   .products__bg-honey {
+   .products__bg-honey,
+   .contacts__bg-bee1 {
       width: 80px;
    }
 }
