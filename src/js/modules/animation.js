@@ -12,4 +12,19 @@ export default function animation() {
       0 // Момент старта анимации
     );
   });
+
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.1});
+
+  // Наблюдаем за элементами .skills__item, .about-me и .education
+  const elementsToAnimate = document.querySelectorAll('.advantages__item, .advantages__image, .promo__subtitle, .products__item, .about__image, h2,  .about__description, .delivery__item, .promo__image');
+  elementsToAnimate.forEach(item => {
+    observer.observe(item);
+  });
 }

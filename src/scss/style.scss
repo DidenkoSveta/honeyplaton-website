@@ -173,8 +173,8 @@
 }
 
 .space {
-   display: inline-block; /* Делаем span видимым как блочный элемент */
-   width: 1rem; /* Задаём ширину равную размеру шрифта элемента */
+   display: inline-block; 
+   width: 1rem; 
  }
  
 
@@ -257,6 +257,124 @@
 .advantages__item:nth-child(even) {
    left: 90px;
 }
+
+.advantages__item,
+.about__description{
+   opacity: 0;
+   transform: translateY(30px);
+   transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+h2{
+   opacity: 0;
+   transform: translateY(-30px);
+   transition:
+      opacity 0.6s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.delivery__item:first-child,
+.delivery__item:last-child{
+   opacity: 0;
+   transform: translateY(30px);
+   transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.delivery__item:nth-child(2),
+.delivery__item:nth-child(3){
+   opacity: 0;
+   transform: translateY(-30px);
+   transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.products__item:nth-child(-n+4) {
+   opacity: 0;
+   transform: translateY(20px);
+   transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.products__item:nth-child(n+5) {
+   opacity: 0;
+   transform: translateY(-20px);
+   transition:
+      opacity 0.5s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.advantages__image,
+.about__image{
+   opacity: 0;
+   transform: translateX(-160px);
+   transition:
+      opacity 0.3s ease-out,
+      transform 0.8s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.promo__subtitle,
+.promo__image{
+   opacity: 0;
+   transform: translateX(60px);
+   transition:
+      opacity 1.2s ease-out,
+      transform 0.5s ease-out;
+
+   // Состояние при появлении в области видимости
+   &.in-view {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
 
 .products {
    margin-top: 160px;
