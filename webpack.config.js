@@ -49,6 +49,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/index.pug',
       filename: 'index.html',
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/privacy.pug',
+      filename: 'privacy.html',
+      minify: false
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

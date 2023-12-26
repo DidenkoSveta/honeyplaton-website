@@ -11,7 +11,10 @@ import custom_cursor from './modules/custom-cursor';
 document.addEventListener('DOMContentLoaded', () => {
   burgerMenu();
   startAnimation();
-  modal();
   scroll();
   custom_cursor();
+  const modalTrigger = document.getElementById('modal');
+  if (modalTrigger) {
+    modal();
+  }
 });
