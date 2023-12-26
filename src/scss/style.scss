@@ -630,7 +630,6 @@
 }
 
 #modal {
-   // display: none;
    position: fixed;
    top: 0;
    left: 0;
@@ -712,7 +711,6 @@
       }
 
       .modal-submit {
-         // width: 30%;
          padding: 20px 44px;
          border: none;
          background: $brown;
@@ -737,10 +735,6 @@
    opacity: 1;
    visibility: visible;
 }
-
-#name.invalid {
-   border: 2px solid red;
- }
  
  
 
