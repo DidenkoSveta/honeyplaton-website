@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export default function scroll() {
    // Создаем кнопку
    const scrollButton = document.createElement('button');
    scrollButton.classList.add('scroll-to-top');
@@ -50,5 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
- });
+ }
  

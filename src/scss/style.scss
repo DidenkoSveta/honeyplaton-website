@@ -168,9 +168,15 @@
 
 .letter,
 .space {
-   display: inline-block; // Для индивидуальной анимации
-   opacity: 0.4; // Скрыть буквы перед началом анимации
+   display: inline-block; 
+   opacity: 0; 
 }
+
+.space {
+   display: inline-block; /* Делаем span видимым как блочный элемент */
+   width: 1rem; /* Задаём ширину равную размеру шрифта элемента */
+ }
+ 
 
 .promo__image-bee001 {
    position: absolute;
@@ -681,7 +687,7 @@
       .form-checkbox {
          margin-bottom: 20px;
       }
-      .form-checkbox{
+      .form-checkbox {
          display: flex;
          align-items: center;
          gap: 10px;
@@ -705,7 +711,7 @@
          color: $brown;
          font-size: 20px;
       }
-      input[type="checkbox"]{
+      input[type="checkbox"] {
          width: auto;
          margin-bottom: 0;
       }
@@ -725,7 +731,7 @@
       }
    }
 }
-.modal__image-bee001{
+.modal__image-bee001 {
    position: absolute;
    left: 0;
 }
@@ -735,15 +741,18 @@
    opacity: 1;
    visibility: visible;
 }
- 
- .scroll-to-top{
+
+.scroll-to-top {
    cursor: pointer;
    background-image: url("../images/icons/scroll-to-top.svg");
    width: 40px;
    height: 40px;
    border: none;
-   background-color: rgba(255, 255, 255, 0.00);
-   filter: drop-shadow(0px 0px 4px rgba(89, 43, 2, 0.60));
- }
+   background-color: rgba(255, 255, 255, 0);
+   filter: drop-shadow(0px 0px 4px rgba(89, 43, 2, 0.6));
+}
+
+
+
 
 @import "mobile";

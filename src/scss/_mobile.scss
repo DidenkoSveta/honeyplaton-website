@@ -197,13 +197,14 @@
       left: 100vw;
       width: 80%;
       height: 100%;
-      background: #fff;
+      background-color: $bg-bege;
       z-index: 2000;
       transition: left 0.3s;
       display: flex;
       flex-direction: column;
       justify-content: center;
       overflow-x: hidden;
+      background-image: url("../images/bg/modal-bg.svg");
    }
 }
 
@@ -1101,7 +1102,6 @@
    }
 }
 
-
 @media (max-width: 768px) {
    .modal-title {
       margin-bottom: 10px;
@@ -1130,7 +1130,7 @@
       transition:
          visibility 0s,
          opacity 0.5s linear;
-}
+   }
 }
 @media (max-width: 768px) {
    #modal .modal-submit {
@@ -1167,7 +1167,7 @@
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
    #modal .modal-container input[type="text"],
    #modal .modal-container input[type="tel"],
    #modal .modal-container input[type="checkbox"] {
@@ -1187,38 +1187,74 @@
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
    #modal .modal-form {
       display: flex;
       flex-direction: column;
       align-items: center;
    }
 }
-@media (max-width: 768px){
-   #modal .form-group{
+@media (max-width: 768px) {
+   #modal .form-group {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
    }
 }
-@media (max-width: 768px){
-   .modal__image-bee001{
+@media (max-width: 768px) {
+   .modal__image-bee001 {
       left: 0;
       top: 20px;
       width: 120px;
    }
 }
 
-@media (max-width: 490px){
-   .modal__image-bee001{
+@media (max-width: 490px) {
+   .modal__image-bee001 {
       left: 0;
       top: 20px;
       width: 100px;
    }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
    #modal .modal-container input[type="checkbox"] {
       width: 50px;
+   }
+}
+
+@media (min-width: 1040px) {
+   .cursor-dot,
+   .cursor-dot-outline {
+      z-index: 2000;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition:
+         opacity 0.3s ease-in-out,
+         transform 0.3s ease-in-out;
+   }
+}
+
+@media (min-width: 1040px) {
+   .cursor-dot {
+      $size: 8px;
+      width: $size;
+      height: $size;
+      background-color: $light-brown;
+   }
+}
+
+@media (min-width: 1040px) {
+   .cursor-dot-outline {
+      $size: 40px;
+      width: $size;
+      height: $size;
+      background-color: rgba($yellow, 0.4);
+      filter: drop-shadow(0px 0px 6px rgba(255, 211, 78, 0.6));
    }
 }
