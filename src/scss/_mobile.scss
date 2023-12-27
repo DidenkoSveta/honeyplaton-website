@@ -242,9 +242,9 @@
 @media (max-width: 1040px) {
    .header__logo,
    .footer__logo {
-      width: 176px;
+      width: 156px;
       color: $brown;
-      font-family: "Appetite";
+      font-family: "Pattaya", sans-serif;
       font-size: 20px;
    }
 }
@@ -396,7 +396,7 @@
 @media (max-width: 640px) {
    .promo__drip svg {
       width: 144px;
-      height: 88px;
+      height: auto;
    }
 }
 

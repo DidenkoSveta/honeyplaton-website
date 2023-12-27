@@ -27,4 +27,43 @@ export default function animation() {
   elementsToAnimate.forEach(item => {
     observer.observe(item);
   });
+  
+  // Анимация для капель меда, стекающих по очереди
+  const drips = document.querySelectorAll('.honey-drip svg .promo__drip-path');
+  const dripsInner = document.querySelectorAll('.honey-drip svg .promo__drip-inner');
+  
+  drips.forEach((drip, index) => {
+    // Для каждой капли задаем анимацию растяжения вниз и уменьшения прозрачности
+    tl.fromTo(drip, 
+      { scaleY: 1, transformOrigin: 'top center'},
+      {
+        scaleY: 1.4,
+        duration: 2,
+        ease: 'sine.inOut',
+        repeat: -1,
+        yoyo: true,
+        yoyoEase: 'power1.inOut',
+        repeatDelay: 1, // Пауза перед началом следующего цикла
+        delay: index * 0.5, // задержка между анимациями капель
+      }, 0);
+  });
+
+  dripsInner.forEach((drip, index) => {
+    // Для каждой капли задаем анимацию растяжения вниз и уменьшения прозрачности
+    tl.fromTo(drip, 
+      { scaleY: 1, transformOrigin: 'top center'},
+      {
+        scaleY: 1.6,
+        duration: 2,
+        ease: 'sine.inOut',
+        repeat: -1,
+        yoyo: true,
+        yoyoEase: 'power1.inOut',
+        repeatDelay: 1, // Пауза перед началом следующего цикла
+        delay: index * 0.5, // задержка между анимациями капель
+      }, 0);
+  });
+  
+
+
 }

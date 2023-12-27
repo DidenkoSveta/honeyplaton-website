@@ -100,10 +100,6 @@
    }
 }
 
-// .header__logo-svg path{
-//    fill: $brown;
-// }
-
 .dim-background {
    display: none;
    position: fixed;
@@ -159,18 +155,25 @@
       box-shadow: 2px 2px 4px 0px rgba(89, 43, 2, 0.2);
       transition: background-color 0.3s;
       z-index: 2;
+      height: auto;
+   }
+   &__button:hover{
+      color: $light-brown;
+      transform: scale(1.02);
+      transition: transform 0.2s linear;
    }
    &__drip {
       position: absolute;
-      top: 96%;
+      top: 86%;
       left: 50%;
       transform: translateX(-50%);
       z-index: -1;
+      height: auto;
    }
-   &__button:hover {
-      transition: transform 0.15s linear;
-      transform: perspective(1000px) scale(1.05);
-   }
+}
+
+.promo__drip-path{
+   filter: drop-shadow(2px 2px 4px rgba(89, 43, 2, 0.10));
 }
 
 .letter,
@@ -753,10 +756,10 @@ h2 {
    transform: perspective(1000px) scale(1.23);
 }
 
-.logo:hover {
-   transition: transform 0.2s linear;
-   transform: perspective(1000px) scale(1.03);
-}
+// .logo:hover {
+//    transition: transform 0.2s linear;
+//    transform: perspective(1000px) scale(1.03);
+// }
 
 #modal {
    position: fixed;
