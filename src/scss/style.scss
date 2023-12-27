@@ -14,7 +14,7 @@
 }
 
 .body-policy {
-   background-color: #FFFAD5;
+   background-color: #fffad5;
 }
 
 .header {
@@ -25,7 +25,6 @@
    }
    &__logo {
       display: flex;
-      flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
       width: 200px;
@@ -101,6 +100,10 @@
    }
 }
 
+// .header__logo-svg path{
+//    fill: $brown;
+// }
+
 .dim-background {
    display: none;
    position: fixed;
@@ -172,15 +175,14 @@
 
 .letter,
 .space {
-   display: inline-block; 
-   opacity: 0; 
+   display: inline-block;
+   opacity: 0;
 }
 
 .space {
-   display: inline-block; 
-   width: 1rem; 
- }
- 
+   display: inline-block;
+   width: 1rem;
+}
 
 .promo__image-bee001 {
    position: absolute;
@@ -263,7 +265,7 @@
 }
 
 .advantages__item,
-.about__description{
+.about__description {
    opacity: 0;
    transform: translateY(30px);
    transition:
@@ -277,7 +279,7 @@
    }
 }
 
-h2{
+h2 {
    opacity: 0;
    transform: translateY(-30px);
    transition:
@@ -292,7 +294,7 @@ h2{
 }
 
 .delivery__item:first-child,
-.delivery__item:last-child{
+.delivery__item:last-child {
    opacity: 0;
    transform: translateY(30px);
    transition:
@@ -307,7 +309,7 @@ h2{
 }
 
 .delivery__item:nth-child(2),
-.delivery__item:nth-child(3){
+.delivery__item:nth-child(3) {
    opacity: 0;
    transform: translateY(-30px);
    transition:
@@ -321,7 +323,7 @@ h2{
    }
 }
 
-.products__item:nth-child(-n+4) {
+.products__item:nth-child(-n + 4) {
    opacity: 0;
    transform: translateY(20px);
    transition:
@@ -335,7 +337,7 @@ h2{
    }
 }
 
-.products__item:nth-child(n+5) {
+.products__item:nth-child(n + 5) {
    opacity: 0;
    transform: translateY(-20px);
    transition:
@@ -350,7 +352,7 @@ h2{
 }
 
 .advantages__image,
-.about__image{
+.about__image {
    opacity: 0;
    transform: translateX(-160px);
    transition:
@@ -365,7 +367,7 @@ h2{
 }
 
 .promo__subtitle,
-.promo__image{
+.promo__image {
    opacity: 0;
    transform: translateX(60px);
    transition:
@@ -378,7 +380,6 @@ h2{
       transform: translateY(0);
    }
 }
-
 
 .products {
    margin-top: 160px;
@@ -874,85 +875,83 @@ h2{
    filter: drop-shadow(0px 0px 4px rgba(89, 43, 2, 0.6));
 }
 
-.privacy{
+.privacy {
    &__container {
       flex-direction: column;
       align-items: center;
       line-height: 130%;
    }
-   &__title{
-      font-family: 'Pattaya', sans-serif;
+   &__title {
+      font-family: "Pattaya", sans-serif;
       font-size: 46px;
       font-weight: 400;
       line-height: 130%;
+      text-align: left;
    }
    &__subtitle {
       font-style: italic;
       font-size: 24px;
    }
-   &__wrapper{
+   &__wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       max-width: 1000px;
       gap: 40px;
    }
-   &__content{
+   &__content {
       display: flex;
       flex-direction: column;
       gap: 16px;
    }
-   &__content span{
+   &__content span {
       font-weight: 600;
    }
    &__list-child,
-   &__list-main{
+   &__list-main {
       display: flex;
       flex-direction: column;
-      gap: 16px;      
+      gap: 16px;
    }
-   &__item-num{
+   &__item-num {
       margin-left: 10px;
    }
-   &__item-num li{
+   &__item-num li {
       padding-top: 10px;
       line-height: 120%;
    }
-   &__list-child li{
+   &__list-child li {
       padding-left: 30px;
    }
 }
 
-
 .privacy__list-main {
    counter-reset: main-counter;
- }
- 
- .privacy__item-num::before {
+}
+
+.privacy__item-num::before {
    display: inline;
    counter-increment: main-counter;
    content: counter(main-counter) ". ";
    margin-right: 0.5em;
- }
- 
- .privacy__list-child {
+}
+
+.privacy__list-child {
    counter-reset: child-counter;
- }
- 
- .privacy__item::before {
+}
+
+.privacy__item::before {
    counter-increment: child-counter;
    content: counter(main-counter) "." counter(child-counter) " ";
    margin-right: 0.5em;
- }
- 
+}
 
- .footer__svg-top {
-   fill: $bg-bege!important;
- }
- 
- .body-policy .footer .footer__svg-top {
-   fill: $light-yellow!important;
- }
+.footer__svg-top {
+   fill: $bg-bege !important;
+}
 
+.body-policy .footer .footer__svg-top {
+   fill: $light-yellow !important;
+}
 
 @import "mobile";

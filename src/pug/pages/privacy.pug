@@ -6,7 +6,27 @@ html(lang="ru")
       title Политика конфиденциальности
       link(rel="shortcut icon" type="image/x-icon" href=require("../../images/icons/favicon.svg"))
    body.body-policy 
-      include ../sections/header
+      header.header
+         .header__container.container
+            a.header__logo.logo(href='index.html') Мёд <br>Платона
+               img.logo__image(src=require("../../images/icons/logo-platon.svg"), alt='Логотип Мед Платона')
+            a.header__burger
+               span.burger-icon 
+            nav.header__nav
+               a.header__close
+               ul.header__nav-list
+                  li.header__nav-item
+                     a.header__nav-link.cursor-scale(href="#advantages") Преимущества
+                  li.header__nav-item
+                     a.header__nav-link(href="index.html#products") Продукция
+                  li.header__nav-item
+                     a.header__nav-link(href="index.html#about") О нас
+                  li.header__nav-item
+                     a.header__nav-link(href="index.html#delivery") Доставка
+                  li.header__nav-item
+                     a.header__nav-link(href="index.html#contacts") Контакты
+               a.header__nav-link.header__nav-link-tel(href="#") +7 (917) 167 33 62
+      //- include ../sections/header
       include ../sections/police-privacy
       include ../sections/footer
       .cursor-dot-outline 
