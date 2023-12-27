@@ -690,9 +690,8 @@ h2 {
    }
    &__logo {
       display: flex;
-      flex-direction: row-reverse;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 200px;
       color: $brown;
       font-family: "Pattaya", sans-serif;
