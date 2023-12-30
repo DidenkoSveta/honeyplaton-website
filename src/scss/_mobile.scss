@@ -1227,6 +1227,12 @@
    }
 }
 
+@media (min-width: 1040px){
+   body{
+      cursor: none;
+   }
+}
+
 @media (min-width: 1040px) {
    .cursor-dot,
    .cursor-dot-outline {

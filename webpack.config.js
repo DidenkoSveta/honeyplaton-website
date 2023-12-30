@@ -23,7 +23,7 @@ module.exports = {
           {
             loader: 'pug-loader',
             options: {
-              pretty: true, 
+              pretty: true,
             }
           }
         ],
@@ -59,10 +59,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].min.css', // Минифицированный CSS
+    }),
   ],
   optimization: {
     minimizer: [
-      new CssMinimizerPlugin(),
+      new CssMinimizerPlugin({
+        test: /\.min\.css$/i, 
+      }),
       new TerserPlugin(),
     ],
   },

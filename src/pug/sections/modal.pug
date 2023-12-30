@@ -10,8 +10,9 @@
             input(type="text" id="name" placeholder="Ваше имя" required)
          .form-group
             label(for="phone")
-            input(type="tel" id="phone" placeholder="Номер телефона" required pattern="\\d*")
+            input(type="tel" id="phone" placeholder="Номер телефона" required pattern="[+\s\(\)\d-]+")
          .form-checkbox
             input(type="checkbox" id="agreement" required)
             label(for="agreement") Согласие на обработку персональных данных
-         button.modal-submit(type="submit") Отправить
+         button.modal-submit(type="submit") Отправить 
+         .notification

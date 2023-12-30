@@ -755,10 +755,10 @@ h2 {
    transform: perspective(1000px) scale(1.23);
 }
 
-// .logo:hover {
-//    transition: transform 0.2s linear;
-//    transform: perspective(1000px) scale(1.03);
-// }
+.contacts__map-iframe {
+   width: 50%;
+}
+
 
 #modal {
    position: fixed;
@@ -955,5 +955,23 @@ h2 {
 .body-policy .footer .footer__svg-top {
    fill: $light-yellow !important;
 }
+
+.notification {
+   display: none; /* Изначально скрыто */
+   position: absolute;
+   bottom: -50px; /* Или любое другое положение, которое вам нужно */
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 10px 20px;
+   background: #f8f8f8;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   text-align: center;
+   z-index: 1001; /* Выше, чем модальное окно */
+   opacity: 0;
+   pointer-events: none; /* Чтобы клики проходили сквозь уведомление */
+ }
+ 
+ 
 
 @import "mobile";
